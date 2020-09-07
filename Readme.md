@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Сергей Мягкий](https://up.htmlacademy.ru/htmlcss/29/user/1463491).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 

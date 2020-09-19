@@ -70,7 +70,8 @@
 }
 
 .main-header, 
-.carousel {
+.carousel,
+.heading {
 	background-color: var(--liter-white-grey);
 }
  
@@ -89,18 +90,19 @@
 	text-transform: uppercase;
 }
 
-.carousel-caption {
+.carousel-caption,
+.heading-caption {
 	color: var(--black);
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
 }
 
-.products-list {
+.services-list {
 	text-align: center;
 }
 
-.products-item h3 {
+.services-item h3 {
 	font-size: 24px;
 	line-height: 30px;
 	color: var(--black);
@@ -126,6 +128,15 @@
 	text-align: center;
 }
 
+.control-item a {
+	color: var(--black);
+	line-height: 18px;
+}
+
+.control-text a {
+	color: var(--black);
+}
+
 .footer-map {
 	background-color: var(--white);
 	color: var(--dark-grey);
@@ -135,7 +146,6 @@
 
 .write-us-phone {
 	color: var(--dark-grey);
-	text-decoration: none;
 	font-size: 16px;
 	line-height: 18px;
 }

@@ -147,6 +147,19 @@
 	text-align: center;
 }
 
+.partners-logo {
+	opacity: 0.2;
+}
+
+.partners-logo:hover {
+	opacity: 1;
+}
+
+.partners-logo:active,
+.main-header-logo:active {
+	opacity: 0.1;
+}
+
 .control-item a {
 	color: var(--black);
 	line-height: 18px;

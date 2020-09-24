@@ -12,8 +12,9 @@
   		<nav class="main-navigation">
   			<a href="index.html" class="main-header-logo">
   				<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
-  			</a>
-  			<ul class="site-navigation clear-list">
+			</a>
+			<div class="main-header-bar"> 
+  				<ul class="site-navigation clear-list">
   				<li>
   					<a href="blank.html">Студия</a>
   				</li>
@@ -26,61 +27,77 @@
   				<li>
   					<a href="blank.html">Контакты</a>
   				</li>
-  			</ul>
-  			<a href="blank.html" class="basket">Корзина</a>
+				</ul>
+				<div class="basket-navigation"> 
+				  <a href="blank.html" class="basket">Корзина</a>
+				</div>
+			</div>
   		</nav>
   	</header>
 
-  	<main class="center">
+  	<main class="container">
   		<h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
 
   		<section class="carousel">
-  			<h2 class="visually-hidden">Карусель с возможностями</h2>
-  			<p class="carousel-caption">Долго, дорого, скрупулезно.</p>
-  			<p>Математически выверенный дизайн
-  			для вашего сайта или мобильного приложения.</p>
-  			<a href="blank.html" class="button">Узнать больше</a>
+			<div class="center"> 
+				<h2 class="visually-hidden">Карусель с возможностями</h2>
+  				<p class="carousel-caption">Долго, дорого, скрупулезно.</p>
+  				<p>Математически выверенный дизайн
+  				для вашего сайта или мобильного приложения.</p>
+			  <a href="blank.html" class="button">Узнать больше</a>
+			</div> 
   		</section>
 
   		<section class="services">
   			<h2 class="visually-hidden">Продукты</h2>
-  			<ul class="services-list clear-list">
-  				<li class="services-item">
-  					<h3>Веб-сайты</h3>
-  					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  					<a href="blank.html" class="button order-button">Заказать</a>
-  				</li>
-  				<li class="services-item">
-  					<h3>Приложения</h3>
-  					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-  					<a href="blank.html" class="button order-button">Заказать</a>
-  				</li>
-  				<li class="services-item">
-  					<h3>Презентации</h3>
-  					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-  					<a href="blank.html" class="button order-button">Заказать</a>
-  				</li>
-  			</ul>	
+			<div class="center">
+				<ul class="services-list clear-list">
+  					<li class="services-item">
+  						<h3>Веб-сайты</h3>
+  						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+  						<a href="blank.html" class="button order-button">Заказать</a>
+  					</li>
+  					<li class="services-item">
+  						<h3>Приложения</h3>
+  						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+  						<a href="blank.html" class="button order-button">Заказать</a>
+  					</li>
+  					<li class="services-item">
+  						<h3>Презентации</h3>
+  						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+  						<a href="blank.html" class="button order-button">Заказать</a>
+  					</li>
+				</ul>
+			</div>		
   		</section>
 
-  		<section class="about-us">
-  			<h2 class="visually-hidden">О нас</h2>
-  			<p class="about-us-caption">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-  			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
-  			<p class="order-caption">Выполняем заказы на разработку:</p>
-  			<ul class="about-us-orders-list">
-  				<li class="about-us-orders-item">Веб-сайтов любой сложности</li>
-  				<li class="about-us-orders-item">Мобильных приложений для iOS и Android</li>
-  				<li class="about-us-orders-item">Слайдшоу и видео для корпоративных презентаций</li>
-			</ul>
-  			<p class="about-us-caption-feature">с <time datetime="2004-01-01">2004 года</time> Любим точность во всем:</p>
-  			<ul class="about-us-list clear-list">
-  				<li class="about-us-item">146<sup class="about-us-item-sup">%</sup> Уровень самоотдачи</li>
-  				<li class="about-us-item">100<sup class="about-us-item-sup">%</sup> Соблюдение сроков</li>
-  				<li class="about-us-item">50<sup class="about-us-item-sup">%</sup> Минимальная предоплата</li>
-  			</ul>
-  		</section>
-
+		<div class="center">
+  			<section class="about-us">
+  			<div>
+				<h2 class="visually-hidden">О нас</h2>
+  				<p class="about-us-caption">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+  				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+			</div>
+			<div>
+			</div>
+			<div>
+				<p class="order-caption">Выполняем заказы на разработку:</p>
+  				<ul class="about-us-orders-list">
+  					<li class="about-us-orders-item">Веб-сайтов любой сложности</li>
+  					<li class="about-us-orders-item">Мобильных приложений для iOS и Android</li>
+  					<li class="about-us-orders-item">Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</div>
+			<div>
+  				<p class="about-us-caption-feature">с <time datetime="2004-01-01">2004 года</time> Любим точность во всем:</p>
+  				<ul class="about-us-list clear-list">
+  					<li class="about-us-item">146<sup class="about-us-item-sup">%</sup> Уровень самоотдачи</li>
+  					<li class="about-us-item">100<sup class="about-us-item-sup">%</sup> Соблюдение сроков</li>
+  					<li class="about-us-item">50<sup class="about-us-item-sup">%</sup> Минимальная предоплата</li>
+				</ul>
+			</div>
+  			</section>
+		</div>
   		<section class="partners">
   			<h2 class="visually-hidden">Партнеры</h2>
   			<ul class="partners-list clear-list">
@@ -110,13 +127,17 @@
 
   	<footer class="main-footer">
   		<section class="footer-map">
-  			<h2 class="visually-hidden">Карта</h2>
-  			<p >Nërds design studio</p>
-  			<p>191186, Санкт-Петербург,
-  			ул. Б. Конюшенная, д. 19/8</p>
-  			<p>тел. <a href="tel:+78122757575" class="write-us-phone">+7 (812) 275-75-75</a></p>
-  			<a href="form.html" class="button button-write-us">Напишите нам</a>
-  		</section>
+  			<div>
+				<h2 class="visually-hidden">Карта</h2>
+  				<p >Nërds design studio</p>
+  				<p>191186, Санкт-Петербург,
+  				ул. Б. Конюшенная, д. 19/8</p>
+  				<p>тел. <a href="tel:+78122757575" class="write-us-phone">+7 (812) 275-75-75</a></p>
+			  <a href="form.html" class="button button-write-us">Напишите нам</a>
+			</div>
+		</section>
+		  
+		<div></div>
 
   		<section class="our-contacts">
   			<h2 class="visually-hidden">Наши контакты</h2>
@@ -130,10 +151,13 @@
   				<li class="our-contacts-item">
   					<a href="https://www.instagram.com/">instagram</a>
   				</li>
-  			</ul>
+			</ul>
+		</section>
+
+		<div>
   			<p class="footer-caption-friendship">Давайте дружить, это выгодно!</p>
   			<p class="footer-caption-discount">Скидка 10% для друзей из социальных сетей.</p>
-  		</section>
+		</div>
   	</footer> 
   
   </body>

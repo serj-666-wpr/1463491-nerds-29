@@ -24,7 +24,7 @@
 		 url("../fonts/robotobold.woff") format("woff"); 
 }
 
-/*Root*/
+/*Variables*/
 :root {
 	--black: #000000;
 	--dark-pink-grey: #231F20;
@@ -51,7 +51,7 @@
 
 }
 
-/*Styles*/
+/*Global*/
 .page-body {
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
@@ -77,17 +77,40 @@
 	list-style: none;
 }
 
-.main-header, 
-.carousel,
-.heading {
-	background-color: var(--liter-white-grey);
+/*Grid*/
+.page {
+	height: 100%;
 }
- 
+
+.page-body {
+	min-height: 100%;
+	width: 1440px;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
+}
+
+/*Main navigation*/
+.main-navigation {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	margin: 0 auto;
+	margin-top: 49px;
+	width: 1160px;
+}
+
 .main-navigation a {
 	color: var(--black);
 	font-weight: 500;
 	line-height: 30px;
 	text-transform: uppercase;
+}
+
+.main-header-bar {
+	display: grid;
+	grid-template-columns: 1fr min-content;
+  	width: 1000px;
+  	margin: 0 auto;
 }
 
 .site-navigation a:hover,
@@ -101,12 +124,28 @@
 	opacity: 0.3;
 }
 
-.button {
-	color: var(--white);
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 18px;
-	text-transform: uppercase;
+.site-navigation {
+	margin: 0;
+  	padding: 0;	
+}
+
+/*Container*/
+.container {
+	display: grid;
+	grid-template-rows: 1fr min-content 1fr min-content;
+	
+}
+
+.center {
+	width: 1160px;
+	margin: 0 auto;
+}
+
+/*Heading*/
+.main-header, 
+.carousel,
+.heading {
+	background-color: var(--liter-white-grey);
 }
 
 .carousel-caption,
@@ -117,8 +156,37 @@
 	line-height: 55px;
 }
 
+/*Buttons*/
+.button {
+	color: var(--white);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.control-item a {
+	color: var(--black);
+	line-height: 18px;
+}
+	
+.control-text a {
+	color: var(--black);
+}
+
+/*Services*/
+
 .services-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 100px;
+	margin: 0;
+	padding: 0;	
 	text-align: center;
+}
+
+.services {
+	margin: 80px 0;
 }
 
 .services-item h3 {
@@ -128,9 +196,18 @@
 	text-transform: uppercase;
 }
 
+/*About us*/
+.about-us {
+	display: grid;
+	grid-template-columns: 660px max-content;
+	grid-template-rows: 1fr 1fr;
+	column-gap: 140px;
+}
+
 .about-us-caption {
 	font-size: 45px;
 	line-height: 45px;
+	font-weight: 500;
 	color: var(--black);
 }
 
@@ -141,6 +218,16 @@
 .about-us-caption-feature {
 	font-weight: 700;
 	color: var(--black);
+}
+
+/*Partners*/
+.partners-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.partners {
+	margin: 45px 0;
 }
 
 .partners-item {
@@ -160,15 +247,14 @@
 	opacity: 0.1;
 }
 
-.control-item a {
-	color: var(--black);
-	line-height: 18px;
+/*Main footer*/
+.main-footer {
+	display: grid;
+	grid-template-columns: min-content max-content;
+	grid-template-rows: 1fr min-content;
+	width: 1160px;
+	margin: 0 auto;
 }
-
-.control-text a {
-	color: var(--black);
-}
-
 .footer-map {
 	background-color: var(--white);
 	color: var(--dark-grey);
@@ -180,6 +266,12 @@
 	color: var(--dark-grey);
 	font-size: 16px;
 	line-height: 18px;
+}
+
+.our-contacts-list{
+	margin: 0;
+	margin-right: 360px;
+	padding: 0;
 }
 
 .footer-caption-friendship {

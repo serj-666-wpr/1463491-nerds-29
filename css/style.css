@@ -81,7 +81,7 @@
 .clear-list {
 	list-style: none;
 	margin: 0;
-  	padding: 0;	
+	padding: 0;	
 }
 
 /*Grid*/
@@ -142,6 +142,12 @@
 	margin: 0;
 }
 
+.heading-caption {
+	text-align: center;
+	padding-top: 72px;
+	padding-bottom: 108px;
+}
+
 /*Buttons*/
 .button {
 	color: var(--white);
@@ -178,8 +184,58 @@
 	font-size: 24px;
 	line-height: 30px;
 	color: var(--black);
+	text-align: left;
 	text-transform: uppercase;
 	margin: 0;
+}
+
+.services-item p {
+	width: 260px;
+	text-align: left;
+}
+
+/*Products*/
+.catalog-main-grid {
+	display: grid;
+	grid-template-columns: 260px 1fr;
+	grid-template-rows: 1fr;
+	column-gap: 140px;
+	padding-top: 55px;
+	margin-bottom: 60px;
+}
+
+.sort-bar {
+	margin-bottom: 48px;
+}
+
+.sort-list-item {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	opacity: 0.3;
+}
+
+.sort-list-item:nth-child(1) {
+	opacity: 1;
+}
+
+/*Filter*/
+.form-filter {
+	outline: 5px solid rgba(255, 0, 0, 0.7);
+	outline-offset: -5px;
+}
+
+.filter-caption {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--black);
+	margin: 0;
+}
+
+.form-filter .filter-caption {
+	margin-bottom: 48px;
 }
 
 /*About us*/
@@ -251,6 +307,7 @@
 
 .partners .center {
 	padding: 45px 0;
+	margin-bottom: 80px;
 	border-top: 2px solid var(--liter-white-grey);
 	border-bottom: 2px solid var(--liter-white-grey);
 }
@@ -277,7 +334,6 @@
 	display: grid;
 	grid-template-columns: min-content max-content;
 	grid-template-rows: 1fr min-content;
-	padding-top: 80px;
 	width: 1160px;
 	margin: 0 auto;
 	margin-bottom: 60px;

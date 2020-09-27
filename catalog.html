@@ -9,98 +9,119 @@
   <body class="page-body">
 
   	<header class="main-header">
-  		<nav class="main-navigation">
+  		<nav class="main-navigation center">
   			<a href="index.html" class="main-header-logo">
   				<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
-  			</a>
-  			<ul class="site-navigation clear-list">
+			</a>
+			<div class="main-header-bar"> 
+  				<ul class="site-navigation clear-list">
   				<li>
-            <a href="blank.html">Студия</a>
-          </li>
+  					<a href="blank.html">Студия</a>
+  				</li>
   				<li>
-            <a href="blank.html">Клиенты</a>
-          </li>
+  					<a href="blank.html">Клиенты</a>
+  				</li>
   				<li>
-            <a href="catalog.html">Магазин</a>
-          </li>
+  					<a href="catalog.html">Магазин</a>
+  				</li>
   				<li>
-            <a href="blank.html">Контакты</a>
-          </li>
-  			</ul>
-  			<a href="blank.html" class="basket">Корзина</a>
+  					<a href="blank.html">Контакты</a>
+  				</li>
+				</ul>
+				<div class="basket-navigation"> 
+				  <a href="blank.html" class="basket">Корзина</a>
+				</div>
+			</div>
   		</nav>
   	</header>
 
-    <main class="center">
+    <main class="container">
       
       <section class="heading">
-        <h1 class="heading-caption">Магазин готовых шаблонов</h1>
+        <div class="center">
+          <h1 class="heading-caption">Магазин готовых шаблонов</h1>
+        </div>
       </section> 
 
-      <section class="form-filter">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-      </section> 
+      <div class="center catalog-main-grid">
+        <section class="form-filter">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <h3 class="filter-caption">Стоимость:</h3>
+        </section> 
 
-      <section class="products">
-        <h2 class="visually-hidden">Список товаров</h2>
-        <ul class="products-list clear-list">
-          <li class="products-item">
-            <a href="blank.html">
-              <img src="img/preview-sedona.jpg" width="360" height="576" alt="Sedona">
-            </a>
-          </li>
-          <li class="products-item">
-            <a href="blank.html">
-              <img src="img/preview-pink.jpg" width="358" height="576" alt="Pink">
-            </a>
-          </li>
-          <li class="products-item">
-            <a href="blank.html">
-              <img src="img/preview-barbershop.jpg" width="364" height="582" alt="Barbershop">
-            </a>
-          </li>
-          <li class="products-item">
-            <a href="blank.html">
-              <img src="img/preview-mishka.jpg" width="362" height="580" alt="Mishka">
-            </a>
-          </li>
-          <li class="products-item">
-            <a href="blank.html">
-              <img src="img/preview-aplus.jpg" width="364" height="582" alt="Aplus">
-            </a>
-          </li>
-          <li class="products-item">
-            <a href="blank.html">
-              <img src="img/preview-kvast.jpg" width="362" height="580" alt="Kvast">
-            </a>
-          </li>
-        </ul>
-        <ul class="control-list clear-list">
-          <li class="control-item">
-            <a>1</a>
-          </li>
-          <li class="control-item">
-            <a href="blank.html">2</a>
-          </li>
-          <li class="control-item">
-            <a href="blank.html">3</a>
-          </li>
-          <li class="control-text button">
-            <a href="blank.html">Следующая</a>
-          </li>
-        </ul>
-      </section>
+        <section class="products">
+          <h2 class="visually-hidden">Список товаров</h2>
+          <div class="sort-bar">
+            <h3 class="filter-caption">Сортировать:</h3>
+            <ul class="sort-list clear-list">
+              <li class="sort-list-item">По цене</li>
+              <li class="sort-list-item">По типу</li>
+              <li class="sort-list-item">По названию</li>
+            </ul>
+          </div>
+          <ul class="products-list clear-list">
+            <li class="products-item">
+              <a href="blank.html">
+                <img src="img/preview-sedona.jpg" width="360" height="576" alt="Sedona">
+              </a>
+            </li>
+            <li class="products-item">
+              <a href="blank.html">
+                <img src="img/preview-pink.jpg" width="358" height="576" alt="Pink">
+              </a>
+            </li>
+            <li class="products-item">
+              <a href="blank.html">
+                <img src="img/preview-barbershop.jpg" width="364" height="582" alt="Barbershop">
+              </a>
+            </li>
+            <li class="products-item">
+              <a href="blank.html">
+                <img src="img/preview-mishka.jpg" width="362" height="580" alt="Mishka">
+              </a>
+            </li>
+            <li class="products-item">
+              <a href="blank.html">
+                <img src="img/preview-aplus.jpg" width="364" height="582" alt="Aplus">
+              </a>
+            </li>
+            <li class="products-item">
+              <a href="blank.html">
+                <img src="img/preview-kvast.jpg" width="362" height="580" alt="Kvast">
+              </a>
+            </li>
+          </ul>
+          <ul class="control-list clear-list">
+            <li class="control-item">
+              <a>1</a>
+            </li>
+            <li class="control-item">
+              <a href="blank.html">2</a>
+            </li>
+            <li class="control-item">
+              <a href="blank.html">3</a>
+            </li>
+            <li class="control-text button">
+              <a href="blank.html">Следующая</a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
   	<footer class="main-footer">
   		<section class="footer-map">
-  			<h2 class="visually-hidden">Карта</h2>
-  			<p >Nërds design studio</p>
-  			<p>191186, Санкт-Петербург,
-  			ул. Б. Конюшенная, д. 19/8</p>
-  			<p>тел. <a href="tel:+78122757575" class="write-us-phone">+7 (812) 275-75-75</a></p>
-  			<a href="form.html" class="button button-write-us">Напишите нам</a>
-  		</section>
+  			<div>
+				<h2 class="visually-hidden">Карта</h2>
+  				<p >Nërds design studio</p>
+  				<p>191186, Санкт-Петербург,
+  				ул. Б. Конюшенная, д. 19/8</p>
+  				<p>тел. <a href="tel:+78122757575" class="write-us-phone">+7 (812) 275-75-75</a></p>
+			  	<a href="form.html" class="button button-write-us">Напишите нам</a>
+			</div>
+		</section>
+		  
+		<div></div>
 
   		<section class="our-contacts">
   			<h2 class="visually-hidden">Наши контакты</h2>
@@ -114,10 +135,13 @@
   				<li class="our-contacts-item">
   					<a href="https://www.instagram.com/">instagram</a>
   				</li>
-  			</ul>
+			</ul>
+		</section>
+
+		<div>
   			<p class="footer-caption-friendship">Давайте дружить, это выгодно!</p>
   			<p class="footer-caption-discount">Скидка 10% для друзей из социальных сетей.</p>
-  		</section>
+		</div>
   	</footer> 
   
   </body>

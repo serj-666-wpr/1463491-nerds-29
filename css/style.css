@@ -215,8 +215,14 @@
 	opacity: 0.3;
 }
 
-.sort-list-item:nth-child(1) {
+.sort-list-item:first-child {
 	opacity: 1;
+}
+
+.products-list {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 30px 40px;
 }
 
 /*Filter*/

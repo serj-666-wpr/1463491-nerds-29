@@ -112,7 +112,22 @@
 
 .main-header-bar {
 	display: grid;
-	grid-template-columns: 1fr min-content;
+	grid-template-columns: 1fr 115px;
+}
+
+.site-navigation {
+	width: 437px;
+	margin-left: 200px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.basket-navigation {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .site-navigation a:hover,
@@ -248,9 +263,9 @@
 .about-us {
 	display: grid;
 	grid-template-columns: 660px max-content;
-	grid-template-rows: 1fr 1fr;
-	column-gap: 140px;
-	padding: 75px 0;
+	grid-template-rows: 208px 208px;
+	gap: 37px 140px;
+	padding: 40px 0 75px 0;
 	border-top: 2px solid var(--liter-white-grey);
 }
 
@@ -259,15 +274,23 @@
 	line-height: 45px;
 	font-weight: 500;
 	color: var(--black);
+	margin: 34px 0 32px 0;
+}
+
+.about-us-text {
 	margin: 0;
 }
 
 .order-caption {
+	margin: 0;
+	margin-bottom: 23px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .about-us-caption-feature {
+	margin: 0;
+	margin-bottom: 31px;
 	font-weight: 700;
 	color: var(--black);
 	text-transform: uppercase;
@@ -320,6 +343,13 @@
 
 .partners-item {
 	text-align: center;
+}
+
+.partners-item,
+.partners-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .partners-logo {

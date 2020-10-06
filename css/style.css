@@ -637,7 +637,7 @@
 	z-index: 1;
 }
 
-.map::after {
+.footer-map::after {
 	content: "";
 	position: absolute;
 	left: 50%;

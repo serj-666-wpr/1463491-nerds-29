@@ -39,11 +39,38 @@
   		<h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
 
   		<section class="carousel">
-			<div class="center"> 
-				<h2 class="visually-hidden">Карусель с возможностями</h2>
-  				<p class="carousel-caption">Долго, дорого, скрупулезно.</p>
-  				<p class="carousel-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-				<a href="blank.html" class="button button-learn-more"><span>Узнать больше</span></a>
+			<h2 class="visually-hidden">Карусель с возможностями</h2>
+			<div class="center slider-image-1">
+				<section class="slider">
+					<ul class="slider-list clear-list">
+  						<li class="slider-item slide slide-current">
+							<p class="carousel-caption">Долго, дорого, скрупулезно.</p>
+							<p class="carousel-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+							<a href="blank.html" class="button button-learn-more">
+								<span>Узнать больше</span>
+							</a>
+						</li>
+						<li class="slider-item slide">
+							<p class="carousel-caption">Любим математику как никто другой</p>
+							<p class="carousel-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+							<a href="blank.html" class="button button-learn-more">
+								<span>Узнать больше</span>
+							</a>
+						</li>
+						<li class="slider-item slide">
+							<p class="carousel-caption">Только ночь, только хардкор</p>
+							<p class="carousel-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+							<a href="blank.html" class="button button-learn-more">
+								<span>Узнать больше</span>
+							</a>
+						</li>
+					</ul>
+					<div class="slider-controls">
+						<button class="current" type="button"aria-label="Первый слайд"></button>
+						<button type="button" aria-label="Второй слайд"></button>
+						<button type="button" aria-label="Третий слайд"></button>
+					</div>
+				</section>
 			</div> 
   		</section>
 
@@ -132,9 +159,9 @@
 
   	<footer class="main-footer">
   		<section class="footer-map">
-			<img src="img/map.png" class="map" width="1440px" height="416px" alt="Карта с расположением дизайн-студии «Нёрдс»"> 
+			<h2 class="visually-hidden">Карта</h2>
+			<img src="img/map.png" class="map" width="1440" height="416" alt="Карта с расположением дизайн-студии «Нёрдс»"> 
   			<div class="center">
-				<h2 class="visually-hidden">Карта</h2>
 				<div class="write-us">
 					<p class="write-us-caption">Nërds design studio</p>
 					<p class="write-us-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -193,6 +220,7 @@
 			</label>
 			<input class="modal-button button" type="submit" name="button" value="Отправить">
 		</form>
+		<button class="modal-close" type="button" aria-label="Закрыть"></button>
 	</section>
   </body>
 </html>

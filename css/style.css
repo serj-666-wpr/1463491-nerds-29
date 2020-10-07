@@ -715,6 +715,7 @@
 }
 
 .social-button {
+	display: block;
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
@@ -760,9 +761,7 @@
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.vk-logo:active::after,
-.facebook-logo:active::after,
-.instagram-logo:active::after {
+.social-button:active::after {
 	opacity: 0.3;
 }
 

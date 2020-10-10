@@ -70,17 +70,17 @@
             <fieldset class="filter-item">
               <legend class="filter-caption">Сетка:</legend>
               <label class="filter-label">
-                <input type="radio" class="filter-input" name="Сетка" value="Адаптивная" checked>
+                <input type="radio" class="filter-input visually-hidden" name="Сетка" value="Адаптивная" checked>
                 <span class="radio"></span>
                 <span class="filter-text">Адаптивная</span>
               </label>
               <label class="filter-label">
-                <input type="radio" class="filter-input" name="Сетка" value="Фиксированная" disabled>
+                <input type="radio" class="filter-input visually-hidden" name="Сетка" value="Фиксированная" disabled>
                 <span class="radio"></span>
                 <span class="filter-text">Фиксированная</span>
               </label>
               <label class="filter-label"> 
-                <input type="radio" class="filter-input" name="Сетка" value="Резиновая">
+                <input type="radio" class="filter-input visually-hidden" name="Сетка" value="Резиновая">
                 <span class="radio"></span>
                 <span class="filter-text">Резиновая</span>
               </label>
@@ -89,27 +89,27 @@
             <fieldset class="filter-item">
               <legend class="filter-caption">Особенность:</legend>
               <label class="filter-label">
-                <input type="checkbox" class="filter-input" name="Особенность" value="Слайдер" checked>
+                <input type="checkbox" class="filter-input visually-hidden" name="Особенность" value="Слайдер" checked>
                 <span class="checkbox"></span>
                 <span class="filter-text">Слайдер</span>
               </label>
               <label class="filter-label">
-                <input type="checkbox" class="filter-input" name="Особенность" value="Блок преимуществ" disabled>
+                <input type="checkbox" class="filter-input visually-hidden" name="Особенность" value="Блок преимуществ" disabled>
                 <span class="checkbox"></span>
                 <span class="filter-text">Блок преимуществ</span>
               </label>
               <label class="filter-label">
-                <input type="checkbox" class="filter-input" name="Особенность" value="Новости" checked>
+                <input type="checkbox" class="filter-input visually-hidden" name="Особенность" value="Новости" checked>
                 <span class="checkbox"></span>
                 <span class="filter-text">Новости</span>
               </label>
               <label class="filter-label">
-                <input type="checkbox" class="filter-input" name="Особенность" value="Галерея">
+                <input type="checkbox" class="filter-input visually-hidden" name="Особенность" value="Галерея">
                 <span class="checkbox"></span>
                 <span class="filter-text">Галерея</span>
               </label>
               <label class="filter-label">
-                <input type="checkbox" class="filter-input" name="Особенность" value="Корзина">
+                <input type="checkbox" class="filter-input visually-hidden" name="Особенность" value="Корзина">
                 <span class="checkbox"></span>
                 <span class="filter-text">Корзина</span>
               </label>
@@ -124,11 +124,20 @@
           <div class="sort-bar">
             <h3 class="filter-caption">Сортировать:</h3>
             <ul class="sort-list clear-list">
-              <li class="sort-list-item">По цене</li>
-              <li class="sort-list-item">По типу</li>
-              <li class="sort-list-item">По названию</li>
+              <li class="sort-list-item">
+                <a href="#" class="sort-list-button">По цене</a>
+              </li>
+              <li class="sort-list-item">
+                <a href="#" class="sort-list-button">По типу</a>
+              </li>
+              <li class="sort-list-item">
+                <a href="#" class="sort-list-button">По названию</a>
+              </li>
             </ul>
-            <div class="buttons-sort"></div>
+            <div class="buttons-sort">
+              <a href="#" class="button-sort-min"></a>
+              <a href="#" class="button-sort-max"></a>
+            </div>
           </div>
           <ul class="products-list clear-list">
             <li class="products-item">
@@ -144,41 +153,84 @@
             <li class="products-item">
               <a href="blank.html">
                 <img src="img/preview-pink.jpg" width="358" height="578" alt="Pink" class="products-image">
+                <div class="products-text">
+                  <a href="blank.html">
+                    <h3 class="products-caption">Pink App</h3>
+                  </a>
+                  <p class="products-info">Продуктовый лендинг приложения для iOS и Android</p>
+                  <a href="blank.html" class="products-button button">9 900 ₽</a>
+                </div>
               </a>
             </li>
             <li class="products-item">
               <a href="blank.html">
                 <img src="img/preview-barbershop.jpg" width="358" height="578" alt="Barbershop" class="products-image">
+                <div class="products-text">
+                  <a href="blank.html">
+                    <h3 class="products-caption">Barbershop</h3>
+                  </a>
+                  <p class="products-info">Сайт салона красоты. Для мужчин, да.</p>
+                  <a href="blank.html" class="products-button button">9 900 ₽</a>
+                </div>
               </a>
             </li>
             <li class="products-item">
               <a href="blank.html">
                 <img src="img/preview-mishka.jpg" width="358" height="578" alt="Mishka" class="products-image">
+                <div class="products-text">
+                  <a href="blank.html">
+                    <h3 class="products-caption">Mishka</h3>
+                  </a>
+                  <p class="products-info">Интернет-магазин<br>вязаных игрушек</p>
+                  <a href="blank.html" class="products-button button">9 900 ₽</a>
+                </div>
               </a>
             </li>
             <li class="products-item">
               <a href="blank.html">
                 <img src="img/preview-aplus.jpg" width="358" height="578" alt="Aplus" class="products-image">
+                <div class="products-text">
+                  <a href="blank.html">
+                    <h3 class="products-caption">A Plus</h3>
+                  </a>
+                  <p class="products-info">Лендинг курсов повышения квалификации</p>
+                  <a href="blank.html" class="products-button button">9 900 ₽</a>
+                </div>
               </a>
             </li>
             <li class="products-item">
               <a href="blank.html">
                 <img src="img/preview-kvast.jpg" width="358" height="578" alt="Kvast" class="products-image">
+                <div class="products-text">
+                  <a href="blank.html">
+                    <h3 class="products-caption">Кваст</h3>
+                  </a>
+                  <p class="products-info">Промо-сайт производителя крафтового кваса</p>
+                  <a href="blank.html" class="products-button button">9 900 ₽</a>
+                </div>
               </a>
             </li>
           </ul>
           <ul class="control-list clear-list">
             <li class="control-item button">
-              <a class="countrol-button disabled">1</a>
+              <a class="control-button disabled">
+                <span class="control-button-text">1</span>
+              </a>
             </li>
             <li class="control-item button">
-              <a href="blank.html" class="countrol-button">2</a>
+              <a href="blank.html" class="control-button">
+                <span class="control-button-text">2</span>
+              </a>
             </li>
             <li class="control-item button">
-              <a href="blank.html" class="countrol-button">3</a>
+              <a href="blank.html" class="control-button">
+                <span class="control-button-text">3</span>
+              </a>
             </li>
             <li class="control-item button">
-              <a href="blank.html" class="countrol-button countrol-button-text">Следующая</a>
+              <a href="blank.html" class="control-button control-button-text">
+                <span class="control-button-text">Следующая</span>
+              </a>
             </li>
           </ul>
         </section>

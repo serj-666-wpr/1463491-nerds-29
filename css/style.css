@@ -36,6 +36,7 @@
 	--lite-grey: #A6A6A6;
 	--liter-grey: #ababab;
 	--grey-white: #C1C1C1;
+	--grey-white-blue: #B4B9BB;
 	--lite-grey-white: #DBDBDB;
 	--white-blue-grey: #D7DCDF;
 	--white-grey: #D5D5D5;
@@ -128,11 +129,13 @@
 .main-header-bar {
 	display: grid;
 	grid-template-columns: 1fr 115px;
+	grid-template-rows: min-content;
+	padding-top: 26px;
 }
 
 .site-navigation {
 	width: 437px;
-	margin-left: 200px;
+	margin-left: 202px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -173,7 +176,7 @@
 	content: "";
 	position: absolute;
 	top: 6px;
-	left: -35px;
+	left: -40px;
 	width: 15px;
 	height: 15px;
 	background-image: url(../img/cart-icon.svg);
@@ -229,7 +232,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-45px, 150px);
+	transform: translate(-44px, 147px);
 	display: flex;
   	min-width: 88px;
   	justify-content: space-between;
@@ -260,7 +263,7 @@
 }
 
 .carousel .center {
-	padding-bottom: 95px;
+	padding-bottom: 90px;
 	background-repeat: no-repeat;
 	background-position: bottom right;
 }
@@ -291,7 +294,7 @@
 
 .button-learn-more {
 	background-color: var(--red);
-	padding: 17px 54px;
+	padding: 17px 54px 15px;
 	border-radius: 3px;
 }
 
@@ -327,7 +330,7 @@
 
 /*Services*/
 .services {
-	margin: 80px 0;
+	margin: 80px 0 90px;
 }
 
 .services-list {
@@ -378,7 +381,7 @@
 .order-button-red,
 .order-button-green,
 .order-button-yellow {
-	padding: 17px 39px;
+	padding: 17px 40px 15px;
 	border-radius: 3px;
 }
 
@@ -802,8 +805,8 @@
 	display: grid;
 	grid-template-columns: 660px max-content;
 	grid-template-rows: 208px 1fr;
-	gap: 37px 140px;
-	padding: 40px 0 75px 0;
+	gap: 40px 140px;
+	padding: 40px 0 73px;
 	border-top: 2px solid var(--liter-white-grey);
 }
 
@@ -833,7 +836,7 @@
 
 .about-us-orders-item {
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 	margin-left: 37px;
 }
 
@@ -852,7 +855,7 @@
 
 .about-us-caption-feature {
 	margin: 0;
-	margin-bottom: 31px;
+	margin-bottom: 28px;
 	font-weight: 700;
 	color: var(--black);
 	text-transform: uppercase;
@@ -864,7 +867,7 @@
 	display: grid;
 	grid-template-columns: min-content min-content min-content;
 	grid-template-rows: min-content min-content;
-	gap: 20px 20px;
+	gap: 12px 23px;
 }
 
 .about-us-item {
@@ -896,15 +899,18 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.partners-item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .partners .center {
 	padding: 45px 0;
 	margin-bottom: 80px;
 	border-top: 2px solid var(--liter-white-grey);
 	border-bottom: 2px solid var(--liter-white-grey);
-}
-
-.partners-item {
-	position: relative;
 }
 
 .partners-item:not(:last-child)::after {
@@ -914,13 +920,6 @@
 	bottom: 20px;
 	height: 52px;
 	border-right: 2px solid var(--liter-white-grey);
-}
-
-.partners-item,
-.partners-logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .partners-logo {
@@ -989,11 +988,13 @@
 
 .footer-map {
 	position: relative;
-	padding: 54px 0;
+	padding: 46px 0;
 	box-sizing: border-box;
+	margin-bottom: 76px;
 }
 
 .map {
+	display: block;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -1012,6 +1013,17 @@
 	width: 231px;
 	height: 190px;
 	background-image: url(../img/map-marker.png);
+	z-index: 2;
+}
+
+.iframe-map {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 100%;
+	z-index: 1;
+	border: none;
 	z-index: 3;
 }
 
@@ -1023,8 +1035,8 @@
 	color: var(--dark-grey);
 	font-size: 16px;
 	line-height: 18px;
-	padding: 49px 50px 47px;
-	z-index: 2;
+	padding: 49px 50px 62px;
+	z-index: 4;
 }
 
 .write-us-caption {
@@ -1055,14 +1067,13 @@
 
 .button-write-us {
 	background-color: var(--red);
-	padding: 17px 44px;
+	padding: 17px 44px 15px;
 	border-radius: 3px;
 }
 
 /*Footer flex*/
 .footer-flex {
 	display: flex;
-	margin-top: 68px;
 }
 
 /*Social button*/
@@ -1073,7 +1084,7 @@
 }
 
 .our-contacts-item:not(:last-child) {
-	margin-right: 9px;
+	margin-right: 10px;
 }
 
 .our-contacts-item {
@@ -1137,7 +1148,9 @@
 	font-size: 36px;
 	line-height: 36px;
 	color: var(--black);
-	margin: 0;
+	padding-top: 7px;
+	margin-top: 0;
+	margin-bottom: 10px;
 }
 
 .footer-caption-discount {
@@ -1145,7 +1158,6 @@
 	line-height: 22px;
 	color: var(--darker-grey);
 	margin: 0;
-	margin-top: 16px;
 }
 
 /*Modal*/
@@ -1204,6 +1216,14 @@
 	padding: 17px 16px;
 	border: 2px solid var(--lite-white-grey);
 	border-radius: 3px;
+}
+
+.modal-input:hover {
+	border: 2px solid var(--grey-white-blue); 
+}
+
+.unremarkable-value {
+	border: 2px solid var(--red);
 }
 
 .modal-button {

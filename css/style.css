@@ -211,7 +211,7 @@
 
 .heading-caption {
 	text-align: center;
-	padding-top: 72px;
+	padding-top: 78px;
 	padding-bottom: 108px;
 }
 
@@ -422,14 +422,14 @@
 	grid-template-rows: 1fr;
 	column-gap: 140px;
 	padding-top: 55px;
-	margin-bottom: 60px;
+	margin-bottom: 68px;
 }
 
 .products-list {
 	display: grid;
 	grid-template-columns: min-content min-content;
 	gap: 30px 40px;
-	margin-bottom: 54px;
+	margin-bottom: 55px;
 }
 
 .products-item {
@@ -542,7 +542,7 @@
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
-	margin-right: 25px;
+	margin-right: 26px;
 	opacity: 0.3;
 }
 
@@ -575,7 +575,7 @@
 	position: relative;
 	width: 40px;
 	height: 10px;
-	margin-left: 47px;
+	margin-left: 48px;
 }
 
 .button-sort-max::after,
@@ -584,14 +584,15 @@
 	position: absolute;
 	width: 11px;
 	height: 10px;
-	left: -4px;
+	top: -2px;
+	left: -1px;
 	background-image: url(../img/button-sort.svg);
 }
 
 .button-sort-max::after {
-	left: 24px;
+	left: 28px;
 	transform: rotate(180deg);
-	opacity: 0.2;
+	opacity: 0.1;
 }
 
 /*Filter*/
@@ -599,15 +600,15 @@
 	margin: 0;
 	padding: 0;
 	border: none;
-	margin-bottom: 44px;
+	margin-bottom: 27px;
 }
 
 .filter-item:first-of-type {
-	margin-bottom: 54px;
+	margin-bottom: 53px;
 }
 
 .filter-item:last-of-type {
-	margin-bottom: 50px;
+	margin-bottom: 32px;
 }
 
 .filter-caption {
@@ -616,15 +617,18 @@
 	line-height: 30px;
 	text-transform: uppercase;
 	color: var(--black);
-	margin-top: 0;
-	margin-bottom: 16px;
+	margin: 0;
+}
+
+.filter-caption-item {
+	margin-bottom: 14px;
 }
 
 .filter-label {
 	display: block;
 	line-height: 24px;
 	padding-left: 36px;
-	margin-bottom: 10px;
+	margin-bottom: 16px;
 }
 
 .filter-label:hover .radio,
@@ -715,11 +719,11 @@
 
 .price-controls input {
 	width: 60px;
-	padding: 10px;
-  	margin-left: 10px;
+	padding: 8px 10px;
+  	margin-left: 12px;
   	text-align: center;
   	border: none;
-  	border-radius: 5px;
+  	border-radius: 3px;
 	background-color: var(--liter-white-grey);
 	color: inherit;
 	font-family: inherit;

@@ -455,7 +455,8 @@
 	box-shadow: 0 6px 15px var(--transparenter-blue);
 }
 
-.products-item:hover .products-text {
+.products-item:hover .products-text,
+.products-item:focus .products-text {
 	display: block;
 }
 
@@ -595,6 +596,11 @@
 	opacity: 0.1;
 }
 
+.button-sort-min:focus::before,
+.button-sort-max:focus::after {
+	outline: -webkit-focus-ring-color auto 1px;
+}
+
 /*Filter*/
 .filter-item {
 	margin: 0;
@@ -630,6 +636,10 @@
 	line-height: 24px;
 	padding-left: 36px;
 	margin-bottom: 16px;
+}
+
+.filter-input:focus + .filter-text {
+	outline: -webkit-focus-ring-color auto 1px;
 }
 
 .radio:hover::before,

@@ -40,24 +40,24 @@
 
   		<section class="carousel">
 			<h2 class="visually-hidden">Карусель с возможностями</h2>
-			<div class="center slider-image-1">
+			<div class="center carousel-slider slider-image-1">
 				<section class="slider">
 					<ul class="slider-list clear-list">
-  						<li class="slider-item slide slide-current">
+  						<li class="slider-item-first slide slide-current">
 							<p class="carousel-caption">Долго, дорого, скрупулезно.</p>
 							<p class="carousel-text">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
 							<a href="blank.html" class="button button-learn-more">
 								<span>Узнать больше</span>
 							</a>
 						</li>
-						<li class="slider-item slide">
+						<li class="slider-item-second slide">
 							<p class="carousel-caption">Любим математику как никто другой</p>
 							<p class="carousel-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
 							<a href="blank.html" class="button button-learn-more">
 								<span>Узнать больше</span>
 							</a>
 						</li>
-						<li class="slider-item slide">
+						<li class="slider-item-third slide">
 							<p class="carousel-caption">Только ночь,<br>только хардкор</p>
 							<p class="carousel-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
 							<a href="blank.html" class="button button-learn-more">
@@ -66,9 +66,9 @@
 						</li>
 					</ul>
 					<div class="slider-controls">
-						<button class="current" type="button" aria-label="Первый слайд"></button>
-						<button type="button" aria-label="Второй слайд"></button>
-						<button type="button" aria-label="Третий слайд"></button>
+						<button class="fist-slide current" type="button" aria-label="Первый слайд"></button>
+						<button class="second-slide" type="button" aria-label="Второй слайд"></button>
+						<button class="third-slide" type="button" aria-label="Третий слайд"></button>
 					</div>
 				</section>
 			</div> 
@@ -206,19 +206,23 @@
 		<form action="https://echo.htmlacademy.ru/" method="POST" class="modal-form">
 			<label>
 				<span class="modal-text">Ваше имя:</span>
-				<input class="modal-input" type="text" name="name" placeholder="Имя Фамилия" required>
+				<input class="modal-input name" type="text" name="name" placeholder="Имя Фамилия" required>
 			</label>
 			<label>
 				<span class="modal-text">Ваш email:</span>
-				<input class="modal-input" type="email" name="email" placeholder="email@example.com " required>
+				<input class="modal-input email" type="email" name="email" placeholder="email@example.com " required>
 			</label>
 			<label class="modal-textarea">
 				<span class="modal-text">Текст письма:</span>
-				<textarea class="modal-input" name="letter" rows="5" placeholder="В свободной форме" required></textarea>
+				<textarea class="modal-input letter" name="letter" rows="5" placeholder="В свободной форме" required></textarea>
 			</label>
 			<input class="modal-button button" type="submit" name="button" value="Отправить">
 		</form>
 		<button class="modal-close" type="button" aria-label="Закрыть"></button>
 	</section>
+
+	<script src="slider.js"></script>
+	<script src="modal.js"></script>
+
   </body>
 </html>

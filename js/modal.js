@@ -23,9 +23,9 @@ modalOpen.addEventListener("click", function (evt) {
 	if (storage) {
 		modalName.value = storage;
 		modalEmail.focus();
-  	} else {
-		modalName.focus();;
-  }
+	} else {
+		modalName.focus();
+	}
 });
 
 /*Close*/
@@ -47,8 +47,12 @@ modalButton.addEventListener("click", function (evt) {
 	if (!modalName.value || !modalEmail.value || !modalLetter) {
 		evt.preventDefault();
 		modal.classList.remove("modal-error");
-    	modal.offsetWidth = modal.offsetWidth;
-    	modal.classList.add("modal-error");
+		modal.offsetWidth = modal.offsetWidth;
+		modal.classList.add("modal-error");
+	} else {
+		if (isStorageSupport) {
+			localStorage.setItem("name", modalName.value);
+		}
 	}
 	if (!modalName.value) {
 		modalName.classList.add("invalid");
@@ -58,18 +62,5 @@ modalButton.addEventListener("click", function (evt) {
 	}
 	if (!modalLetter.value) {
 		modalLetter.classList.add("invalid");
-	}
-});
-
-modalForm.addEventListener("submit", function (evt) {
-	if (!modalName.value || !modalEmail.value || !modalLetter) {
-		evt.preventDefault();
-		modal.classList.remove("modal-error");
-    	modal.offsetWidth = modal.offsetWidth;
-    	modal.classList.add("modal-error");
-	} else {
-		if (isStorageSupport) {
-			localStorage.setItem("name", modalName.value);
-		}
 	}
 });

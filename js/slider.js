@@ -18,6 +18,10 @@ firstSlide.addEventListener("click", function () {
 	firstText.classList.add("slide-current");
 	secondText.classList.remove("slide-current");
 	thirdText.classList.remove("slide-current");
+
+	corousel.classList.remove("animation-slider");
+	corousel.offsetWidth = corousel.offsetWidth;
+	corousel.classList.add("animation-slider");
 });
 
 secondSlide.addEventListener("click", function () {
@@ -32,6 +36,10 @@ secondSlide.addEventListener("click", function () {
 	firstText.classList.remove("slide-current");
 	secondText.classList.add("slide-current");
 	thirdText.classList.remove("slide-current");
+
+	corousel.classList.remove("animation-slider");
+	corousel.offsetWidth = corousel.offsetWidth;
+	corousel.classList.add("animation-slider");
 });
 
 thirdSlide.addEventListener("click", function () {
@@ -46,4 +54,8 @@ thirdSlide.addEventListener("click", function () {
 	firstText.classList.remove("slide-current");
 	secondText.classList.remove("slide-current");
 	thirdText.classList.add("slide-current");
+
+	corousel.classList.remove("animation-slider");
+	corousel.offsetWidth = corousel.offsetWidth;
+	corousel.classList.add("animation-slider");
 });

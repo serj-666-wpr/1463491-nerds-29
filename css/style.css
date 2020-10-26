@@ -235,7 +235,7 @@
 	transform: translateX(-50%);
 	display: flex;
   	min-width: 88px;
-  	justify-content: space-between;
+	justify-content: space-between;
 }
 
 .slider-controls button {
@@ -282,6 +282,10 @@
 
 .slider-image-3 {
 	background-image: url(../img/nerds-index-slide_3.png);
+}
+
+.animation-slider {
+	animation: slide 0.5s;
 }
 
 .carousel-caption {
@@ -1292,21 +1296,41 @@
 }
 
 /*Animation*/
+@keyframes slide {
+	0% {
+		transform: translate(-90%);
+		opacity: 0.1;
+	}
+  
+	60% {
+		transform: translate(-10%);	
+		opacity: 0.5;
+	}
+  
+	90% {
+		transform: translate(10%);
+	}
+  
+	100% {
+		transform: translate(0%);
+	}
+}
+
 @keyframes bounce {
 	0% {
 		transform: translate(-50%, -100%);
 	}
   
 	60% {
-	  	transform: translate(-50%, -45%);
+		transform: translate(-50%, -45%);
 	}
   
 	90% {
-	  	transform: translate(-50%, -55%);
+		transform: translate(-50%, -55%);
 	}
   
 	100% {
-	  	transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
 	}
 }
 
@@ -1330,4 +1354,4 @@
 	80% {
 		transform: translate(-40%, -50%);
 	}
-  }
+}

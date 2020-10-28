@@ -81,10 +81,10 @@
 
 .visually-hidden {
 	position: absolute;
-  	clip: rect(0 0 0 0);
-  	width: 1px;
-  	height: 1px;
-  	margin: -1px;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
 
 .page-body a {
@@ -135,7 +135,7 @@
 }
 
 .site-navigation {
-	width: 437px;
+	width: 445px;
 	margin-left: 202px;
 	display: flex;
 	flex-wrap: wrap;
@@ -216,7 +216,7 @@
 }
 
 /*Carousel*/
-.slider {
+.carousel {
 	position: relative;
 }
 
@@ -231,7 +231,7 @@
 .slider-controls {
 	position: absolute;
 	left: 50%;
-	bottom: 5px;
+	bottom: 95px;
 	transform: translateX(-50%);
 	display: flex;
   	min-width: 88px;

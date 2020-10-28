@@ -1,10 +1,10 @@
 const corousel = document.querySelector(".carousel-slider");
-const firstSlide = corousel.querySelector(".fist-slide");
-const secondSlide = corousel.querySelector(".second-slide");
-const thirdSlide = corousel.querySelector(".third-slide");
-const firstText = corousel.querySelector(".slider-item-first");
-const secondText = corousel.querySelector(".slider-item-second");
-const thirdText = corousel.querySelector(".slider-item-third");
+const firstSlide = document.querySelector(".fist-slide");
+const secondSlide = document.querySelector(".second-slide");
+const thirdSlide = document.querySelector(".third-slide");
+const firstText = document.querySelector(".slider-item-first");
+const secondText = document.querySelector(".slider-item-second");
+const thirdText = document.querySelector(".slider-item-third");
 
 firstSlide.addEventListener("click", function () {
 	firstSlide.classList.add("current");

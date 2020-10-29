@@ -249,10 +249,6 @@
 	cursor: pointer;
 }
 
-.slider-controls button:focus {
-	outline: none;
-}
-
 .current::after {
 	content: "";
 	position: absolute;
